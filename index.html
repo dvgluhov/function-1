@@ -1,0 +1,123 @@
+<body>
+    <!-- <p id="Log"></p> -->
+    <script>
+        // function prepareStr() {
+        //     str = "This string was prepared by function";
+        // }
+        // prepareStr();
+
+        // Log.innerHTML = "str =" + str;
+
+        // упражнение 2
+
+        // var x;
+        // function showHoisting(){
+        //     // console.log("x before declaration:"+ x);
+        //     let x=2;
+        //     console.log("x after declaration:"+ x);
+
+        // }
+        // showHoisting();
+        // console.log("x after function:"+ x);
+
+
+        // упражнеие 3
+        var str = "", count = 0; sum = 0;
+        // Задача 1
+
+
+        // function stringFrom() {
+        //     for (i=0; i<arguments.length; i++)
+        //     if (i!= arguments.length-1)
+        //     str += String (arguments [i]) +" ";
+        //     else
+        //     str += String(arguments[i]);
+        //     return str;
+        // }
+        // console.log(stringFrom ("Я", "купил", 5, "яблок"));
+
+
+        // Задача 2
+
+        // function minValue() {
+        //     if (arguments.length==0)
+        //     return underfined;
+        //     min=arguments[0];
+        //     for (i=1; i<arguments.length; i++)
+        //     if (arguments [i]<min)
+        //     min = arguments[i];
+        //     return min;
+
+        // }
+        // console.log(minValue (6, 10, 2, -10, -15, 0, 150, -189));
+
+
+
+        // Задача 3
+
+        // function numbers() {
+        //     for (i = 0; i < arguments.length; i++)
+        //         if (typeof arguments[i] == "number")
+        //             count++;
+        //     return count;
+        // }
+        // console.log("Количество числовых аргументов -" + numbers(5, true, "t", 9, "9"));
+        // count=0; //Обнуляем значение
+
+
+
+        // Задача 4
+
+        // function mean() {
+        //     for (i = 0; i < arguments.length; i++)
+        //         if (typeof arguments[i] == "number") {
+        //             count++;
+        //             sum +=arguments[i];
+
+        //         }
+
+        //     return sum/count;
+        // }
+        // console.log("Среднее значение все чисел -" + mean(4, true, "t", 9, "9"));
+        // sum=0;
+        // count=0;
+
+
+
+
+        //   Задача 5
+        // function powerOfTwo(x) {
+        //     if (x == 1)
+        //         return true;
+        //     if (x % 2 == 0)
+        //         return powerOfTwo(x / 2);
+        //     return false;
+
+        // }
+        // if (powerOfTwo(9))
+        //     console.log("Число является степенью двойки");
+        // else
+        //     console.log("Число не является степенью двойки");
+
+
+        //   Задача 6
+        var n;
+        n = +prompt("Введите число");
+
+        function reversedNumber(x) {
+            if (x >= 10) {
+                str += String(x % 10);
+                reversedNumber(Math.floor(x / 10))
+            }
+            else
+                str += x;
+        }
+        reversedNumber (n);
+        alert(str);
+
+
+
+
+
+    </script>
+</body>
